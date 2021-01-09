@@ -1,0 +1,30 @@
+@startuml
+agent browser
+
+node "server" {
+    component nginx:80 as nc {
+    }
+    component client as cc {
+    }
+    component server as sc {
+    }
+    component db as dc {
+    }
+}
+
+browser -> server#green: example.com:80/
+server -do-> nc#green: example.com:80/
+
+nc -do-> cc#green :client:1234/
+
+
+browser -> server: example.com:80/todo
+server -do-> nc: example.com:80/todo
+
+nc -do-> sc :server:4567/todo
+sc -do-> dc :db:3306
+
+
+
+
+@enduml

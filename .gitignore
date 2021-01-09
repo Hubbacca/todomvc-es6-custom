@@ -147,6 +147,8 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+*.pem
+
 # Windows shortcuts
 *.lnk
 ### SublimeText template
@@ -182,3 +184,10 @@ GitHub.sublime-settings
 mochawesome-report/
 /.idea/checkstyle-idea.xml
 /.idea/sonarlint
+<<<<<<< HEAD
+=======
+
+
+.env
+*.mp4
+>>>>>>> a7f3f2a8ee29ce2d5e62504fc60c450dab9e4c9a
